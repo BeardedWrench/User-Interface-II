@@ -243,3 +243,20 @@ Contact Page
     font-size:20px;
     margin-top:10px;
 }
+/*
+About Me CSS
+*/
+
+section.aboutMe{
+    width:60%;
+}
+section.aboutMe h2{
+    font-size:30px;
+    text-align:center;
+}
+section.aboutMe p{
+    margin-top:20px;
+}
+section.aboutMe button{
+    margin-top:20px;
+}
