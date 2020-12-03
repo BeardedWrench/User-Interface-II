@@ -202,3 +202,37 @@ Change width based on low resolution(Phone screen) to widen spacing on social ic
 .links button:hover{
     background-color: #615cc0;
 }
+
+/*
+Contact Page
+*/
+.contactForm{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+#contactMe h3{
+    margin-bottom:10px;
+    font-size:28px;
+}
+#contactMe textarea {
+	height:250px;
+    width:900px;
+    resize:none;
+    background-color:#2f3136;
+    border:2px solid white;
+    font-size:22px;
+    color:white;
+}
+#contactMe input{
+    width:600px;
+    height:30px;
+    margin-bottom:10px;
+    background-color:#2f3136;
+    border:2px solid white;
+    color:white;
+    font-size:22px;
+}
+#contactMe .email{
+    color:#615cc0;
+}
