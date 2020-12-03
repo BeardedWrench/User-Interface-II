@@ -223,6 +223,7 @@ Contact Page
     border:2px solid white;
     font-size:22px;
     color:white;
+    padding:10px;
 }
 #contactMe input{
     width:600px;
@@ -232,7 +233,13 @@ Contact Page
     border:2px solid white;
     color:white;
     font-size:22px;
+    padding:10px;
 }
 #contactMe .email{
     color:#615cc0;
+}
+#contactMe button{
+    padding:20px;
+    font-size:20px;
+    margin-top:10px;
 }
