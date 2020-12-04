@@ -68,7 +68,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 100px 20px 100px
+    width:65%;
+    margin:auto;
+    margin-bottom:20px;
+    margin-top:20px;
+   /* margin: 20px 100px 20px 100px*/
 }
 header nav{
     margin-left:auto;
