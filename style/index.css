@@ -50,7 +50,16 @@ table {
     border-spacing: 0;
 }
 /*
-Custom CSS
+TODO:
+-Modify css for responsive design for mobile device.
+    -Change Splash text(Terry Brown) text size on devices with a width of 375 or smaller
+    -change navigation on devices with a width smaller than 795
+*/
+
+
+
+/*
+    Custom CSS
 */
 *{
     font-family: 'Share Tech', sans-serif;
@@ -62,7 +71,7 @@ body{
     box-sizing: border-box;
 }
 /*
-Header
+    Header
 */
 header{
     display: flex;
@@ -72,7 +81,6 @@ header{
     margin:auto;
     margin-bottom:20px;
     margin-top:20px;
-   /* margin: 20px 100px 20px 100px*/
 }
 header nav{
     margin-left:auto;
@@ -89,12 +97,13 @@ button{
 }
 nav button{
     margin-left:10px;
+    font-size:1rem;
 }
 button:hover{
     background-color: #615cc0;
 }
 /*
-Splash image
+    Splash image
 */
 section.splash{
     display:flex;
@@ -116,7 +125,7 @@ section.splash button{
     margin-top: 20px;
 }
 /*
-Main Content
+    Main Content
 */
 .featured{
     margin:auto;
@@ -129,7 +138,7 @@ Main Content
     align-items: center;
 }
 /*
-Project Display
+    Project Display
 */
 .project{
     display: flex;
@@ -143,12 +152,10 @@ Project Display
     margin-bottom:30px;
     -webkit-filter: brightness(100%);
     transition: .3s;
-    
 }
 .project img{
     width:100%;
     height:90%;
-
 }
 .project:hover{
    background-color:#615cc0;
@@ -157,7 +164,7 @@ Project Display
     margin-top: 10px;
 }
 /*
-Footer
+    Footer
 */
 footer{
     background-color: #2f3136;
@@ -172,19 +179,10 @@ footer{
     justify-content: center;
     margin-top:20px;
 }
-
 .socials{
     margin-top:20px;
     margin-bottom:20px;
     width:15%;
-}
-/*
-Change width based on low resolution(Phone screen) to widen spacing on social icons
-*/
-@media screen and (max-width: 64em) {
-    .socials{
-        width:70%;
-    }
 }
 .socials ul{
     display:flex;
@@ -206,7 +204,6 @@ Change width based on low resolution(Phone screen) to widen spacing on social ic
 .links button:hover{
     background-color: #615cc0;
 }
-
 /*
 Contact Page
 */
@@ -251,7 +248,6 @@ Contact Page
 /*
 About Me CSS
 */
-
 section.aboutMe{
     width:60%;
 }
@@ -265,3 +261,67 @@ section.aboutMe p{
 section.aboutMe button{
     margin-top:20px;
 }
+/*
+    Repsonsive changes for different resolutions.
+*/
+
+@media screen and (max-width: 1028px){
+    .project{
+        width:45%;
+        height:33vh;
+    }
+    .project img{
+        height:85%;
+    }
+    .project h2{
+        font-size:0.9rem;
+     }
+     .socials{
+        width:70%;
+    }
+}
+
+/*
+    Mobile navigation for resolutions with a width below 768px wide.
+*/
+@media screen and (max-width: 836px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        font-size:2.7rem;
+    }
+    header nav{
+        width:35%;
+        margin-left:0;
+        text-align:center;
+
+    }
+    header nav button{
+        margin-top:10px;
+        margin-left:0;
+    }
+}
+/*
+    Specific for Ipad, for weird nav bug
+*/
+@media screen and (min-width: 546px) and (max-width:836px) {
+    header nav{
+        width:100%;
+    }
+  }
+/*
+    Adjust size of splash test(Terry Brown) for resolutions smaller than 381px wide.
+*/
+@media screen and (max-width: 381px) {
+    section.splash h2{
+        font-size:3rem;
+    }
+    header h1{
+        font-size:2.4rem;
+    }
+    .project h2{
+       font-size:0.6rem;
+    }
+}
+
