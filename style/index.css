@@ -1,1 +1,333 @@
-/* Add CSS styling here */
+/*
+Import Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+/*
+CSS RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+TODO:
+-Modify css for responsive design for mobile device.
+    -Change Splash text(Terry Brown) text size on devices with a width of 375 or smaller
+    -change navigation on devices with a width smaller than 795
+*/
+
+
+
+/*
+    Custom CSS
+*/
+*{
+    font-family: 'Share Tech', sans-serif;
+}
+body{
+    font-family: 'Share Tech', sans-serif;
+    color:#fffdf9;
+    background-color: #26272a;
+    box-sizing: border-box;
+}
+/*
+    Header
+*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:65%;
+    margin:auto;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+header nav{
+    margin-left:auto;
+}
+header h1{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+button{    
+    background-color: #26272a;
+    border: 2px solid white;
+    padding: 10px;
+    color:white;
+}
+nav button{
+    margin-left:10px;
+    font-size:1rem;
+}
+button:hover{
+    background-color: #615cc0;
+}
+/*
+    Splash image
+*/
+section.splash{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    width: 50%;
+    height: 500px;
+    background:url(/images/projects/splash.jfif) 0 20%/cover no-repeat;
+    margin: auto;
+    border: 2px solid white;
+}
+section.splash h2{
+    font-size:5rem;
+    text-shadow: 1px 1px black;
+}
+section.splash button{
+    margin-top: 20px;
+}
+/*
+    Main Content
+*/
+.featured{
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    width:73%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*
+    Project Display
+*/
+.project{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width:375px;
+    height:375px;
+    border: 2px solid white;
+    margin-bottom:30px;
+    -webkit-filter: brightness(100%);
+    transition: .3s;
+}
+.project img{
+    width:100%;
+    height:90%;
+}
+.project:hover{
+   background-color:#615cc0;
+}
+.project h2{
+    margin-top: 10px;
+}
+/*
+    Footer
+*/
+footer{
+    background-color: #2f3136;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+}
+.socials{
+    margin-top:20px;
+    margin-bottom:20px;
+    width:15%;
+}
+.socials ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+.socials ul li{
+    filter: brightness(0) invert(1);
+}
+.socials ul li:hover{
+    filter: none;
+}
+.socials ul li img{
+    width:32px;
+    height:32px;
+}
+.links button{
+    background-color:#2f3136;
+}
+.links button:hover{
+    background-color: #615cc0;
+}
+/*
+Contact Page
+*/
+.contactForm{
+    width:80%;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+}
+#contactMe h3{
+    margin-bottom:10px;
+    font-size:24px;
+}
+#contactMe textarea {
+	height:250px;
+    width:600px;
+    resize:none;
+    background-color:#2f3136;
+    border:2px solid white;
+    font-size:18px;
+    color:white;
+    padding:5px;
+}
+#contactMe input{
+    width:400px;
+    height:30px;
+    margin-bottom:10px;
+    background-color:#2f3136;
+    border:2px solid white;
+    color:white;
+    font-size:18px;
+    padding:5px;
+}
+#contactMe .email{
+    color:#615cc0;
+}
+#contactMe button{
+    padding:20px;
+    font-size:20px;
+    margin-top:10px;
+}
+/*
+About Me CSS
+*/
+section.aboutMe{
+    width:60%;
+}
+section.aboutMe h2{
+    font-size:30px;
+    text-align:center;
+}
+section.aboutMe p{
+    margin-top:20px;
+}
+section.aboutMe button{
+    margin-top:20px;
+}
+/*
+    Repsonsive changes for different resolutions.
+*/
+
+@media screen and (max-width: 1028px){
+    .project{
+        width:45%;
+        height:33vh;
+    }
+    .project img{
+        height:85%;
+    }
+    .project h2{
+        font-size:0.9rem;
+     }
+     .socials{
+        width:70%;
+    }
+    #contactMe input{
+        width:100%;
+    }
+    #contactMe textarea {
+        width:100%;
+    }
+}
+
+/*
+    Mobile navigation for resolutions with a width below 768px wide.
+*/
+@media screen and (max-width: 836px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        font-size:2.7rem;
+    }
+    header nav{
+        width:35%;
+        margin-left:0;
+        text-align:center;
+
+    }
+    header nav button{
+        margin-top:10px;
+        margin-left:0;
+    }
+}
+/*
+    Specific for Ipad, for weird nav bug
+*/
+@media screen and (min-width: 546px) and (max-width:836px) {
+    header nav{
+        width:100%;
+    }
+  }
+/*
+    Adjust size of splash test(Terry Brown) for resolutions smaller than 381px wide.
+*/
+@media screen and (max-width: 381px) {
+    section.splash h2{
+        font-size:3rem;
+    }
+    header h1{
+        font-size:2.4rem;
+    }
+    .project h2{
+       font-size:0.6rem;
+    }
+}
+

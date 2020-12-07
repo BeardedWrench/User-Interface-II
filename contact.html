@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Terry Brown - Contact</title>
 </head>
 <body>
-    <h1> CONTACT </h1>
+    <header>
+        <h1>Terry Brown</h1>
+        <nav>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='about.html'">About</button>
+            <button onclick="window.location.href='projects.html'">Projects</button>
+            <button onclick="window.location.href='contact.html'">Contact</button>
+        </nav>
+    </header>
+
+    <section class="splash">
+        <h2>Terry Brown</h2>
+        <button onclick="window.location.href='projects.html'">My Projects</button>
+    </section>
+
+    <div class="featured">
+       <section class="contactForm">
+            <form id="contactMe" action="" method="post">
+                <h3>Contact Me</h3>
+                <fieldset>
+                    <input placeholder="Name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input class="email" placeholder="Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit">Submit</button>
+                </fieldset>
+            </form>
+       </section>
+    </div>
+
+    <footer>
+        <div class="links">
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="#"><img src="./images/socials/github.png" alt="Github"/></a></li>
+                <li><a href="#"><img src="./images/socials/linkedin.png" alt="LinkedIn"/></a></li>
+                <li><a href="#"><img src="./images/socials/twitter.png" alt="Twitter"/></a></li>
+                <li><a href="#"><img src="./images/socials/instagram.png" alt="Instagram"/></a></li>
+            </ul>
+        </div>
+    </footer>
+    
 </body>
 </html>
