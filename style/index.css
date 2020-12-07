@@ -279,6 +279,12 @@ section.aboutMe button{
      .socials{
         width:70%;
     }
+    #contactMe input{
+        width:100%;
+    }
+    #contactMe textarea {
+        width:100%;
+    }
 }
 
 /*
